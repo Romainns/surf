@@ -1,24 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #b4d7e1;
+    font-family: "Ubuntu", sans-serif;
 }
 
 header {
     border-bottom: 0.5px solid black;
     padding: 20px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header img {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    margin-left: 25px;
+    width: 260px;
+    height: auto;
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 250px;
-    /**
-        Réponse à la question : lorsque la zone d'affichage diminue en largeur, l'image reste toujours en haut à droite comme prévu.
-     */
+    top: 20px;
+    right: 20px;
+    border-radius: 10%;
 }
 
 nav {
@@ -55,7 +60,16 @@ nav li a {
 
 h1 {
     color: #1e4b4b;
+    font-family: "Original Surfer", sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    padding: 15px;
 }
+
+header h2 {
+    padding-bottom: 15px;
+}
+
 
 .produits {
     display: grid;
@@ -97,6 +111,8 @@ h1 {
 
 footer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     border-top: 1px solid black;
     padding-left: 20px;
     padding-right: 20px;
@@ -104,16 +120,61 @@ footer {
     margin-bottom: 10px;
 }
 
-.copyright {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 20px;
+footer a {
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
 }
 
-.mentions {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 20px;
+.mentions-legales-content, .confidentialite-content {
+    margin: 10px;
 }
+
+.mentions-legales-content h2, .confidentialite-content h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.mentions-legales li, .confidentialite-content li {
+    margin: 15px;
+}
+
+.cookie-popup {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: white;
+  color: #333;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  z-index: 1000;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+.cookie-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cookie-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cookie-button.accept {
+  background-color: #007BFF;
+  color: white;
+}
+
+.cookie-button.reject {
+  background-color: #ccc;
+  color: #333;
+}
+
