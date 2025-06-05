@@ -11,19 +11,29 @@
     <meta name="description" content="Bienvenue sur le site de Ma Boutique de Surf, votre destination pour les meilleures planches à surf et accessoires depuis 1989.">
 </head>
 <body>
+    <div id="imageModal" class="image-modal">
+        <span class="close-area"></span>
+        <img id="modalImage" src="img/image_surf_1.jpg" alt="Agrandissement">
+    </div>
     <header>
         <h1>Bienvenue</h1>
         <h2>Qui sommes-nous ?</h2>
         <p>Notre boutique située sur la côte, vend les plus belles planches à surf depuis 1989.</p>
         <img src="img/image_surf_1.jpg" alt="Image de surf">
     </header>
-            <nav>
-                <ul>
-                    <li class="lien1"><a href="index.html">Accueil</a></li>
-                    <li class="lien2"><a href="plan_acces.html">Plan d'accès</a></li>
-                    <li class="lien3"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav> 
+    <nav>
+        <ul>
+            <li class="lien1"><a href="index.html">Accueil</a></li>
+            <li class="lien2"><a href="plan_acces.html">Plan d'accès</a></li>
+            <li class="lien3"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav> 
+    <section class="parallax-section">
+        <div class="parallax-content">
+            <h2>Explorez les Vagues</h2>
+            <p>Vivez l'expérience surf ultime</p>
+        </div>
+    </section>
     <section class="produits">
         <h2>Nos produits</h2>
         <div class="planches">
@@ -53,6 +63,23 @@
                 <li>Harpon - 70€</li>
             </ul>
         </div>
+    </section>
+    <section class="afficher-plus">
+        <div id="extraContent" class="extra-content">
+            <div class="extra-item">
+                <img src="img/accessoire1.jpg" alt="Accessoire 1">
+                <p>Housse premium</p>
+            </div>
+            <div class="extra-item">
+                <img src="img/service1.jpg" alt="Service 1">
+                <p>Réparation rapide</p>
+            </div>
+            <div class="extra-item">
+                <img src="img/accessoire2.jpg" alt="Accessoire 2">
+                <p>Planche personnalisée</p>
+            </div>
+        </div>
+        <button id="toggleExtra" class="toggle-btn">Afficher plus</button>
     </section>
     <footer>
         <p class="copyright">Copyright©2024 <i>Ma Boutique de Surf</i></p>
