@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ma Boutique de Surf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue</h1>
+        <h2>Qui sommes-nous ?</h2>
+        <p>Notre boutique située sur la côte, vend les plus belles planches à surf depuis 1989.</p>
+        <img src="img/image_surf_1.jpg" alt="Image de surf">
+    </header>
+    <nav>
+        <ul>
+            <li class="lien1"><a href="index.html">Accueil</a></li>
+            <li class="lien2"><a href="plan_acces.html">Plan d'accès</a></li>
+            <li class="lien3"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav> 
+    <form>
+        <fieldset>
+            <legend>Contact</legend>
+            <label>Titre:</label>
+            <input type="radio" id="mme" name="title" value="mme">
+            <label for="mme">Mme</label>
+            <input type="radio" id="mr" name="title" value="mr">
+            <label for="mr">M</label>
+            <br>
+            <label>Prénom :</label>
+            <input type="text" id="prenom" name="prenom">
+            <br>
+            <label>Nom :</label>
+            <input type="text" id="nom" name="nom">
+            <br>
+            <label>Email :</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label>Choisissez un motif :</label>
+            <select id="motif" name="motif">
+                <option value="choix">--Sélectionner une option--</option>
+                <option value="question">Question</option>
+                <option value="commande">Commande</option>
+                <option value="retour">Retour</option>
+                <option value="autre">Autre</option>
+            </select>
+            <br>
+            <label>Message :</label>
+            <textarea id="message" name="message" rows="4" cols="30"></textarea>
+            <br>
+            <input type="submit" value="Envoyer">
+        </fieldset>
+    </form>
+    <footer>
+        <p class="copyright">Copyright©2024 Ma Boutique de Surf</p>
+        <p class="mentions">Mentions légales</p>
+    </footer>
+</body>
+</html>
