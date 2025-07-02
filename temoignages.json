@@ -1,0 +1,56 @@
+[
+    {
+        "nom": "Claire L.",
+        "date": "2025-06-21",
+        "commentaire": "Super boutique ! Matériel de qualité et service client au top.",
+        "note": 5
+    },
+    {
+        "nom": "Maxime D.",
+        "date": "2025-06-18",
+        "commentaire": "Livraison rapide. Très satisfait de ma planche !",
+        "note": 4
+    },
+    {
+        "nom": "Julie P.",
+        "date": "2025-06-10",
+        "commentaire": "Large choix de produits, je recommande.",
+        "note": 4
+    },
+    {
+        "nom": "Antoine R.",
+        "date": "2025-06-05",
+        "commentaire": "Service client réactif et à l'écoute. Merci !",
+        "note": 5
+    },
+    {
+        "nom": "Sophie M.",
+        "date": "2025-05-30",
+        "commentaire": "Très bonne expérience d'achat, je reviendrai.",
+        "note": 4
+    },
+    {
+        "nom": "Lucas T.",
+        "date": "2025-05-25",
+        "commentaire": "Les prix sont un peu élevés, mais la qualité est au rendez-vous.",
+        "note": 3
+    },
+    {
+        "nom": "Emma B.",
+        "date": "2025-05-20",
+        "commentaire": "J'adore ma nouvelle combinaison, elle est parfaite pour l'été !",
+        "note": 5
+    },
+    {
+        "nom": "Thomas G.",
+        "date": "2025-05-15",
+        "commentaire": "Le site est facile à naviguer et les produits sont bien décrits.",
+        "note": 4
+    },
+    {
+        "nom": "Chloé S.",
+        "date": "2025-05-10",
+        "commentaire": "Je recommande cette boutique à tous les amateurs de surf.",
+        "note": 5
+    }
+]

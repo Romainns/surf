@@ -457,7 +457,7 @@ input[type="submit"]:hover {
 }
 
 .parallax-section {
-    background-image: url('img/fond.jpg');
+    background-image: url('img/fond.jpeg');
     height: 400px;
     background-attachment: fixed;
     background-position: center;
@@ -490,3 +490,169 @@ input[type="submit"]:hover {
     margin: 0;
 }
 
+#temoignages {
+    padding: 2rem;
+    background: #f0f8ff;
+    text-align: center;
+}
+
+.temoignages-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.avis-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.avis-nom {
+    font-weight: bold;
+}
+
+.avis-date {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.avis-commentaire {
+    margin: 0.5rem 0;
+    font-style: italic;
+}
+
+.avis-note {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+    nav ul {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .produits {
+        grid-template-columns: 1fr;
+    }
+
+    .temoignages-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .parallax-content h2 {
+        font-size: 2rem;
+    }
+
+    .parallax-content p {
+        font-size: 1rem;
+    }
+
+    header img {
+        width: 150px;
+        top: 10px;
+        right: 10px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .cookie-popup {
+        max-width: 90%;
+        padding: 15px 20px;
+    }
+
+    .cookie-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cookie-button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .produits > div {
+        margin: 10px;
+    }
+
+    .temoignages-container {
+        grid-template-columns: 1fr;
+    }
+
+    .parallax-section {
+        height: 300px;
+    }
+
+    .parallax-content h2 {
+        font-size: 1.7rem;
+    }
+
+    .parallax-content p {
+        font-size: 1rem;
+    }
+
+    header h2,
+    header p {
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    .extra-item {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    form {
+        padding: 20px;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .parallax-content {
+        padding: 15px 20px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    .cookie-popup {
+        padding: 10px;
+    }
+
+    .cookie-buttons {
+        gap: 5px;
+    }
+
+    .extra-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    nav li {
+        padding: 8px 25px;
+    }
+}

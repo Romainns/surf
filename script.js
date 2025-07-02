@@ -60,3 +60,23 @@ extraImages.forEach(img => {
         modal.style.display = "flex";
     });
 });
+
+fetch('temoignages.json')
+  .then(response => response.json())
+  .then(data => {
+    const container = document.querySelector('.temoignages-container');
+
+    data.forEach(avis => {
+      const card = document.createElement('div');
+      card.classList.add('avis-card');
+
+      card.innerHTML = `
+        <p class="avis-nom">${avis.nom} - <span class="avis-date">${avis.date}</span></p>
+        <p class="avis-commentaire">"${avis.commentaire}"</p>
+        <p class="avis-note">Note : ${'⭐'.repeat(avis.note)}</p>
+      `;
+
+      container.appendChild(card);
+    });
+  });
+
